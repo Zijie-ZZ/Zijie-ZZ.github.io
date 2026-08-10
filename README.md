@@ -74,6 +74,11 @@ Everything is plain HTML — edit the text directly in each page.
 - **News** — the home-page News section is currently removed. Its markup is
   parked in `assets/_news-section.html.txt`; paste it back before `</main>`
   in `index.html` to restore it. The CSS is still in place.
+- **CV** — currently hidden. `cv.html` still exists but is unlinked and
+  carries a `noindex` tag. To bring it back: drop the `robots` meta from
+  `cv.html`, add `<a href="cv.html">CV</a>` to the `<nav>` in all six
+  pages, and uncomment the CV button in `index.html`. Put the actual PDF
+  at `assets/Zijie_Zheng_CV.pdf` first — that link is still unresolved.
 - **Accent color** — edit `--accent` and `--accent-dark` at the top of
   `css/style.css`.
 - **Navigation** — the header nav is repeated in each page; if you add a
