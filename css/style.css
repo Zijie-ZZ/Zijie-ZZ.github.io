@@ -277,11 +277,13 @@ footer {
   margin: 0 0 0.35rem;
 }
 
-/* Figures break out slightly wider than the text column. Multi-panel journal
-   figures need the extra width to stay legible; body text does not. */
+/* Figures sit inside the text column and a little narrower than it, so they
+   read as supporting material rather than dominating the page. They link
+   through to the full-size image for anyone who wants to read the axes. */
 .highlight-figure {
-  margin: 0 -2.5rem 0.9rem;
-  padding: 0.75rem;
+  margin: 0 auto 0.9rem;
+  padding: 0.7rem;
+  max-width: 88%;
   background: var(--bg-subtle);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -292,10 +294,15 @@ footer {
   line-height: 0;
 }
 
+/* max-height keeps a near-square figure from towering over the wide ones;
+   wide figures are limited by width and never reach it. */
 .highlight-figure img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
+  max-height: 28rem;
+  margin: 0 auto;
   border-radius: 4px;
 }
 
@@ -312,6 +319,21 @@ footer {
   color: var(--text-muted);
   font-size: 0.9rem;
   margin-top: 0.5rem;
+}
+
+/* Badge marking a project as not yet published. */
+.wip {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0.1rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .section-more {
@@ -410,17 +432,6 @@ footer {
   text-align: center;
 }
 
-/* ---------- Medium screens ---------- */
-
-/* Below this the window is no longer wide enough to absorb the figure
-   breakout, so pull the figures back in line with the text column. */
-@media (max-width: 860px) {
-  .highlight-figure {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 /* ---------- Small screens ---------- */
 
 @media (max-width: 600px) {
@@ -453,6 +464,7 @@ footer {
   }
 
   .highlight-figure {
+    max-width: 100%;
     padding: 0.6rem;
   }
 
