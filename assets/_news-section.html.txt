@@ -1,0 +1,69 @@
+Parked News section for the home page.
+
+Not served as part of the site — it is a plain .txt so the browser never
+renders it. To bring News back, paste the block below into index.html just
+before the closing </main> tag. The matching .news CSS is already in
+css/style.css.
+
+Newest first. To add an entry, copy one <li> block:
+
+    <li>
+      <span class="news-date">Mon YYYY</span>
+      <span class="news-body">What happened.</span>
+    </li>
+
+Five to eight entries is plenty; trim from the bottom.
+
+------------------------------------------------------------------------
+
+  <h2>News</h2>
+
+  <ul class="news">
+    <li>
+      <span class="news-date">2026</span>
+      <span class="news-body">
+        MATLAB code for the CAC-barrier transport model is now archived on
+        <a href="https://doi.org/10.5281/zenodo.18379165">Zenodo</a>.
+      </span>
+    </li>
+    <li>
+      <span class="news-date">2026</span>
+      <span class="news-body">
+        &ldquo;Effects of Mass Transfer Limitations on PFAS Breakthrough in
+        Colloidal Activated Carbon Groundwater Barriers&rdquo; is published in
+        <em>ACS ES&amp;T Engineering</em>.
+        <a href="https://doi.org/10.1021/acsestengg.6c00103">DOI</a>
+      </span>
+    </li>
+    <li>
+      <span class="news-date">2026</span>
+      <span class="news-body">
+        Co-authored study on mercury removal by enhanced coagulation is
+        published in <em>Water Research</em>.
+        <a href="https://doi.org/10.1016/j.watres.2026.125769">DOI</a>
+      </span>
+    </li>
+    <li>
+      <span class="news-date">Dec 2025</span>
+      <span class="news-body">
+        Presented &ldquo;Impact of Particulate Carbon Amendments on PFAS Fate and
+        Transport in Groundwater&rdquo; at the AGU Fall Meeting (H23I-1312).
+      </span>
+    </li>
+    <li>
+      <span class="news-date">2025</span>
+      <span class="news-body">
+        Co-authored study on abiotic trichloroethylene transformation in
+        low-permeability zones is published in <em>ACS ES&amp;T Water</em>.
+        <a href="https://doi.org/10.1021/acsestwater.5c00672">DOI</a>
+      </span>
+    </li>
+    <li>
+      <span class="news-date">Dec 2024</span>
+      <span class="news-body">
+        Presented &ldquo;Reactant Transport and Breakthrough of PFAS Mixtures in
+        Particulate Carbon-Amended Aquifer Material&rdquo; at the AGU Fall
+        Meeting (H41H-0633).
+      </span>
+    </li>
+  </ul>

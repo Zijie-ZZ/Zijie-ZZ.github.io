@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos — Zijie Zheng</title>
+  <meta name="description" content="Travel photographs by Zijie Zheng — oceans, lakes, and rivers, from an environmental engineer who studies water nobody can see.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-name" href="index.html">Zijie Zheng</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="photos.html" class="active">Photos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Photos</h1>
+
+  <p>
+    Outside research I travel whenever I can, and I almost always end up next
+    to water — an ocean, a lake, a river.
+  </p>
+
+  <p>
+    There is a reason it pulls at me. My working life is spent on water nobody
+    can see: groundwater moving through sand and carbon at centimeters a day,
+    known only through models and breakthrough curves. Above ground the same
+    water does all the same things — it flows, it mixes, it carries things
+    along, it gets held up — except you can stand in front of it and watch.
+  </p>
+
+  <p>
+    So these are mostly rivers, coastlines, and lakes, with whatever else
+    caught my eye along the way.
+  </p>
+
+  <!-- ==================================================================
+       HOW TO ADD A PHOTO
+
+       1. Put the image file in  assets/images/photos/
+          Resize it first so the long edge is about 1600 px — full-size
+          camera files are 5-10 MB each and will make this page crawl.
+          On a Mac you can do this from the Terminal:
+
+            sips -Z 1600 ~/Desktop/my-photo.jpg
+
+       2. Copy one <figure> block below, paste it at the TOP of the grid
+          (newest first), and edit the four marked parts.
+
+       3. Delete the <p class="empty-note"> block once you have added
+          your first photo.
+
+       TEMPLATE — copy from here:
+
+       <figure class="photo-item">
+         <a href="assets/images/photos/FILENAME.jpg">
+           <img src="assets/images/photos/FILENAME.jpg"
+                loading="lazy"
+                alt="SHORT DESCRIPTION OF WHAT IS IN THE PHOTO">
+         </a>
+         <figcaption>
+           <strong>PLACE</strong>
+           One sentence about what you noticed here.
+         </figcaption>
+       </figure>
+
+       ON CAPTIONS — this is what makes the page worth visiting. A place name
+       alone is forgettable. Place name plus one specific observation is not:
+
+         weak    Lake Travis, 2025
+         better  Lake Travis — twenty feet below full pool after the drought,
+                 with the old road bed showing through again.
+
+       You do not have to be scientific about it, but when the water itself is
+       doing something interesting — a sediment plume at a river mouth, a
+       braided channel, a tide line — say so. That is the part only you would
+       notice.
+
+       GROUPING — with more than about eight photos, break the single grid
+       into themed groups by repeating this pattern:
+
+         <h2>Rivers</h2>
+         <div class="photo-grid"> …figures… </div>
+
+         <h2>Coastlines</h2>
+         <div class="photo-grid"> …figures… </div>
+
+       Clicking a photo opens the full-size file; there is no JavaScript.
+       ================================================================== -->
+
+  <div class="photo-grid">
+
+    <!-- Photo entries go here, newest first. -->
+
+    <figure class="photo-item">
+      <a href="assets/images/photos/grand-prismatic-yellowstone.jpg">
+        <img src="assets/images/photos/grand-prismatic-yellowstone.jpg"
+             loading="lazy"
+             alt="Grand Prismatic Spring in Yellowstone seen from a hillside, a deep blue pool ringed by concentric orange and yellow bands, with a boardwalk of visitors along the far edge.">
+      </a>
+      <figcaption>
+        <strong>Grand Prismatic Spring, Yellowstone</strong>
+        July 2026. The color bands are microbial mats sorted by temperature —
+        too hot for them at the blue center, cooler and crowded toward the
+        orange rim. A gradient wide enough to read from a hillside.
+      </figcaption>
+    </figure>
+
+    <figure class="photo-item">
+      <a href="assets/images/photos/orca-breach.jpg">
+        <img src="assets/images/photos/orca-breach.jpg"
+             loading="lazy"
+             alt="An orca breaching clear of calm blue water near a forested, cobbled shoreline, with a second dorsal fin visible further out.">
+      </a>
+      <figcaption>
+        <strong>Orca, breaching</strong>
+        August 2024. Close in against the shoreline, and the second dorsal fin
+        out to the right is the rest of the pod coming through behind it.
+      </figcaption>
+    </figure>
+
+    <figure class="photo-item">
+      <a href="assets/images/photos/grand-turk-beach.jpg">
+        <img src="assets/images/photos/grand-turk-beach.jpg"
+             loading="lazy"
+             alt="An unfinished concrete frame standing on a white sand beach, its open panels looking out onto turquoise water under a clear sky.">
+      </a>
+      <figcaption>
+        <strong>Grand Turk, Turks and Caicos</strong>
+        March 2023. An unfinished concrete frame left standing on the sand,
+        cutting the water into panels.
+      </figcaption>
+    </figure>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    &copy; 2026 Zijie Zheng &middot; The University of Texas at Austin
+  </div>
+</footer>
+
+</body>
+</html>

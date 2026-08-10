@@ -17,32 +17,115 @@
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="cv.html">CV</a>
+      <a href="photos.html">Photos</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <h1>Zijie Zheng</h1>
-  <p class="tagline">Environmental Engineering&nbsp;|&nbsp;Contaminant Transport&nbsp;|&nbsp;Groundwater Remediation&nbsp;|&nbsp;Numerical Simulation</p>
 
-  <p>
-    I am a Ph.D. researcher in environmental engineering at The University of
-    Texas at Austin. My research focuses on contaminant fate and transport in
-    porous media, with current work on PFAS transport, reactive transport
-    modeling, and groundwater remediation. I combine laboratory experiments
-    and numerical simulations to understand contaminant behavior and support
-    practical remediation design.
-  </p>
+  <!-- ==================================================================
+       HERO
+       To change the headshot, replace assets/images/profile.jpg with a
+       square crop of at least 400x400 px. No markup change needed.
+       ================================================================== -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Zijie Zheng</h1>
+      <p class="tagline">Environmental Engineering&nbsp;|&nbsp;Contaminant Transport&nbsp;|&nbsp;Groundwater Remediation&nbsp;|&nbsp;Numerical Simulation</p>
 
-  <div class="button-row">
-    <a class="button primary" href="assets/Zijie_Zheng_CV.pdf">Download CV</a>
-    <a class="button" href="https://scholar.google.com/citations?user=s6OahHcAAAAJ&amp;hl=en">Google Scholar</a>
-    <a class="button" href="https://orcid.org/0009-0003-3645-7184">ORCID</a>
-    <a class="button" href="https://www.researchgate.net/profile/Zijie-Zheng-10">ResearchGate</a>
-    <a class="button" href="https://www.linkedin.com/in/zijie-zheng-b65581253">LinkedIn</a>
-    <a class="button" href="https://github.com/Zijie-ZZ">GitHub</a>
+      <p>
+        I am a Ph.D. researcher in environmental engineering at The University of
+        Texas at Austin. I study how PFAS move through and are retained by
+        carbon-amended aquifers, combining column experiments with reactive
+        transport modeling. My goal is to turn laboratory-scale sorption and
+        mass-transfer measurements into predictions that hold up at the field
+        scale, where remediation decisions are actually made.
+      </p>
+
+      <div class="button-row">
+        <a class="button primary" href="cv.html">CV</a>
+        <a class="button" href="https://scholar.google.com/citations?user=s6OahHcAAAAJ&amp;hl=en">Google Scholar</a>
+        <a class="button" href="https://orcid.org/0009-0003-3645-7184">ORCID</a>
+        <a class="button" href="https://github.com/Zijie-ZZ">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/zijie-zheng-b65581253">LinkedIn</a>
+      </div>
+    </div>
+
+    <img class="profile-photo" src="assets/images/profile.jpg" alt="Zijie Zheng">
   </div>
+
+  <!-- ==================================================================
+       RESEARCH HIGHLIGHTS
+       Each highlight is one <section class="highlight"> block: a figure,
+       a title, and two or three sentences of plain-language explanation.
+       Figures live in assets/images/.
+       ================================================================== -->
+  <h2>Research Highlights</h2>
+
+  <section class="highlight">
+    <figure class="highlight-figure">
+      <img src="assets/images/highlight-cac-schematic.png"
+           alt="Schematic of a colloidal activated carbon barrier injected across a PFAS plume in an aquifer, with a pore-scale inset showing PFAS transferring from flow paths onto CAC particles and an inset breakthrough curve illustrating rate-limited release.">
+    </figure>
+    <h3>Mass transfer, not capacity, controls PFAS breakthrough</h3>
+    <p>
+      Colloidal activated carbon (CAC) is injected into an aquifer to form a
+      sorptive barrier across a PFAS plume. Sizing that barrier from equilibrium
+      capacity assumes PFAS reaches the carbon as fast as water carries it past
+      — but at the pore scale, PFAS must first transfer from the flow paths onto
+      CAC surfaces, and that step takes time. When it is slow relative to the
+      residence time in the barrier, PFAS breaks through while most of the
+      sorption capacity is still unused.
+    </p>
+
+    <figure class="highlight-figure">
+      <img src="assets/images/highlight-damkohler.png"
+           alt="Two Damköhler number maps over advection time and mass-transfer time, for lab scale and field scale, with a dashed Da equals one line separating kinetic from equilibrium regimes.">
+    </figure>
+    <p>
+      Which regime a system falls in collapses onto a single Damköhler number,
+      the ratio of the advective residence time <em>t</em><sub>A</sub> to the
+      mass-transfer time <em>t</em><sub>R</sub>. The dashed
+      <em>Da</em>&nbsp;=&nbsp;1 line splits kinetic control (upper left) from
+      local equilibrium (lower right). Column experiments sit well onto the
+      kinetic side (a), so lab data cannot be extrapolated with an equilibrium
+      model. At field scale (b) natural-gradient flow falls near equilibrium,
+      but pumping pulls the same barrier back into kinetic control — which is
+      exactly where equilibrium sizing overpredicts barrier lifetime.
+    </p>
+
+    <p class="highlight-meta">
+      Published in <em>ACS ES&amp;T Engineering</em> (2026) ·
+      <a href="https://doi.org/10.1021/acsestengg.6c00103">paper</a> ·
+      <a href="https://doi.org/10.5281/zenodo.18379165">code</a>
+    </p>
+  </section>
+
+  <section class="highlight">
+    <figure class="highlight-figure">
+      <img src="assets/images/highlight-heterogeneity.png"
+           alt="Pore-velocity fields for homogeneous, layered, channelized, and random hydraulic conductivity structures, with the resulting flux-weighted breakthrough curves and arrival times.">
+    </figure>
+    <h3>Preferential flow lets PFAS bypass the barrier</h3>
+    <p>
+      Extending the model to two dimensions shows that how CAC is distributed
+      matters as much as how much is emplaced. Channelized conductivity
+      structures route flow around treated zones, cutting the time to 5&nbsp;%
+      breakthrough by roughly a factor of four relative to a homogeneous aquifer
+      with identical average properties — a failure mode invisible to
+      column-scale testing.
+    </p>
+    <p class="highlight-meta">Work in progress.</p>
+  </section>
+
+  <p class="section-more"><a href="research.html">More about my research &rarr;</a></p>
+
+  <!-- News section removed for now. The markup is kept in
+       assets/_news-section.html.txt if you want it back later;
+       the .news CSS is still in css/style.css. -->
+
 </main>
 
 <footer>

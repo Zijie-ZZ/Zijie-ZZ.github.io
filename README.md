@@ -7,16 +7,21 @@ no JavaScript) designed for GitHub Pages.
 
 ```
 academic-website/
-├── index.html          # Home — name, tagline, bio, profile links
+├── index.html          # Home — hero, research highlights, profile links
 ├── research.html       # Research interests and project descriptions
 ├── publications.html   # Selected publications
 ├── cv.html             # CV download page
+├── photos.html         # Photo gallery (travel, conferences, fieldwork)
 ├── contact.html        # Contact information
 ├── css/
 │   └── style.css       # All styling (colors, layout, responsive rules)
 ├── assets/
-│   ├── Zijie_Zheng_CV.pdf   # Your CV (replace the placeholder)
-│   └── images/              # Photos and figures, if needed later
+│   ├── Zijie_Zheng_CV.pdf        # Your CV (still a placeholder)
+│   ├── _news-section.html.txt    # Parked News markup, not served
+│   └── images/
+│       ├── profile.jpg           # Headshot used on the home page
+│       ├── highlight-*.png       # Home-page research highlight figures
+│       └── photos/               # Gallery images
 └── README.md
 ```
 
@@ -60,10 +65,19 @@ Everything is plain HTML — edit the text directly in each page.
 - **Publications** — each entry in `publications.html` is one
   `<div class="publication">` block. Copy, paste, and edit the three
   lines inside. Delete the placeholder entries once real ones are added.
+- **Research highlights** — each is one `<section class="highlight">` block
+  in `index.html`: a figure from `assets/images/`, a title, and a short
+  plain-language explanation.
+- **Photos** — drop resized images into `assets/images/photos/`, then copy
+  the `<figure class="photo-item">` template from the comment in
+  `photos.html`. Resize first with `sips -Z 1600 photo.jpg`.
+- **News** — the home-page News section is currently removed. Its markup is
+  parked in `assets/_news-section.html.txt`; paste it back before `</main>`
+  in `index.html` to restore it. The CSS is still in place.
 - **Accent color** — edit `--accent` and `--accent-dark` at the top of
   `css/style.css`.
 - **Navigation** — the header nav is repeated in each page; if you add a
-  page, add its link to the `<nav>` in all five files.
+  page, add its link to the `<nav>` in all six files.
 
 ## Previewing locally
 
