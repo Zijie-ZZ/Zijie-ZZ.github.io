@@ -148,6 +148,14 @@ li {
   font-size: 0.95rem;
 }
 
+/* Advisor line: names lifted out of the muted grey so they read first,
+   using weight and text colour rather than the accent, which is reserved
+   for links. */
+.advisors .name {
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* ---------- Buttons and link rows ---------- */
 
 .button-row {
