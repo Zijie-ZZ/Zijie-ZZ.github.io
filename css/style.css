@@ -158,7 +158,7 @@ li {
    text colour rather than the accent, which is reserved for links. */
 .advisors .name {
   color: var(--text);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* ---------- Buttons and link rows ---------- */
